@@ -25,6 +25,8 @@ end
 
 def using_delete(instructors, string)
   instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
+  string = "Steven"
+  no_offense_steven = instructors.delete_at("Steven")
 
 def using_delete_at(famous_robots, integer)
   famous_robots = ["Johnny 5", "R2D2", "Robocop"]
