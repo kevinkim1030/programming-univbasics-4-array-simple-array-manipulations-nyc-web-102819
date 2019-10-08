@@ -29,24 +29,12 @@ end
 
 
 
-describe "using_uniq" do 
-  it "takes in an argument of an array and uses the uniq method to remove any duplicate items" do
-    haircuts = ["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler", "Bob"]
-    new_array = using_uniq(haircuts)
-    expect(new_array).to eq(["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler"])
-  end
-end
-
-
-
 
 
 haircuts = ["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler", "Bob"]
 def using_uniq(haircuts)
   uniq_array = haircuts.uniq
 end
-
-
 
 instruments = ["Saxophone", ["Piano", "Trumpet"], "Violin", "Drums", "Flute"]
 def using_flatten(instruments)
@@ -70,13 +58,17 @@ end
 
 
 
-
-
 def using_delete(instructors, string)
   instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
   string = "Steven"
   no_offense_steven = instructors.delete("Steven")
 end
+
+
+
+
+
+
 
 def using_delete_at(famous_robots, integer)
   famous_robots = ["Johnny 5", "R2D2", "Robocop"]
