@@ -23,7 +23,7 @@ end
 
 
 
-
+def using_delete(array, string)
 
 def using_delete_at(famous_robots, integer)
   famous_robots = ["Johnny 5", "R2D2", "Robocop"]
