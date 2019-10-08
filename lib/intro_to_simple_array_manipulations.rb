@@ -12,14 +12,15 @@ def using_unshift(array, string)
 end
 
 
-continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
+def using_pop(continents)
+  continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
   using_pop = continents.pop
 end
 
-dog_breeds = ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
+
 def pop_with_args(dog_breeds)
-  small_dog = dog_breeds.pop.pop
-  
+dog_breeds = ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
+  small_dogs = dog_breeds.pop(2)
 end
 
 
@@ -45,22 +46,6 @@ end
 my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
 def using_shift(my_favorite_cities)
   im_so_over_this_city = my_favorite_cities.shift 
-end
-
-
-describe "shift_with_args" do 
-  before(:each) do 
-    @ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
-    @brands_removed = shift_with_args(@ice_cream_brands)
-  end
-  
-  it "takes in an argument of an array and uses the shift method with an argument of 2 to remove and return the first 2 items from the array" do 
-    expect(@brands_removed).to eq(["Blue Bell Creameries", "Ben & Jerry's"])
-  end
-
-  it "decreases the length of the array by 2" do 
-    expect(@brands_removed.size).to eq(2)
-  end
 end
 
 
