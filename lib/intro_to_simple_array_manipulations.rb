@@ -63,6 +63,7 @@ describe "shift_with_args" do
 end
 
 ice_cream_brands = ["Blue Bell Creameries", "Ben & Jerry's", "Baskin Robbins", "Braum's", "Breyer's"]
+def shift_with_args()
 
 
 
