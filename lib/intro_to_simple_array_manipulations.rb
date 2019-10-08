@@ -23,8 +23,9 @@ end
 
 
 
-def using_delete(instructors, "Steven")
+def using_delete(instructors, string)
   instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
+  string = "Steven"
   no_offense_steven = instructors.delete_at("Steven")
 end
 
