@@ -27,6 +27,6 @@ end
 
 def using_delete_at(famous_robots, integer)
   famous_robots = ["Johnny 5", "R2D2", "Robocop"]
-famous_robots = ["Johnny 5", "R2D2", "Robocop"]
-deleted_robot = using_delete_at(famous_robots, 2)
+  integer = 2 
+  deleted_robot = famous_robots.delete_at(integer)
 end
